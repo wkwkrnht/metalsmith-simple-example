@@ -18,7 +18,7 @@
                   	    "default": "uncategorized"
                     },
                     "draft": {
-                        "exists": "false"
+                        "exists": false
                     }
                 }
             }
@@ -34,7 +34,7 @@
             },
             "serieNameProperty": "nameoftheserie",
             "sortByProperty": "pubdate",
-            "reverse": "true"
+            "reverse": true
         },
         "metalsmith-author": {
             "collection": "posts",
@@ -51,12 +51,12 @@
             "cacheDir": ".gists"
         },
         "metalsmith-youtube": {
-            "width:": "800",
-            "height": "450",
-            "suggested": "true",
-            "controls": "true",
-            "showTitle": "true",
-            "privacy" : "true"
+            "width:": 800,
+            "height": 450,
+            "suggested": true,
+            "controls": true,
+            "showTitle": true,
+            "privacy" : true
         },
         "metalsmith-twitter-card": {
             "siteurl": "wkwkrnht-blog.netlify.com",
