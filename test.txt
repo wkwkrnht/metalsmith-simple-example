@@ -1,0 +1,17 @@
+"metalsmith-open-graph": {
+    "siteurl": "https://wkwkrnht-blog.netlify.com",
+    "sitetype": "article"
+},
+"metalsmith-youtube": {
+    "width:": "800",
+    "height": "450",
+    "suggested": "true",
+    "controls": "true",
+    "showTitle": "true",
+    "privacy" : "true"
+},
+"metalsmith-excerptor": {
+    "maxLength": 100,
+    "keepImageTag": false,
+    "ellipsis": "…"
+},

@@ -44,22 +44,10 @@
                 }
             }
         },
-        "metalsmith-youtube": {
-            "width:": "800",
-            "height": "450",
-            "suggested": "true",
-            "controls": "true",
-            "showTitle": "true",
-            "privacy" : "true"
-        },
         "metalsmith-twitter-card": {
             "siteurl": "https://wkwkrnht-blog.netlify.com",
             "card": "summary",
             "site": "@wkwkrnht",
-        },
-        "metalsmith-open-graph": {
-            "siteurl": "https://wkwkrnht-blog.netlify.com",
-            "sitetype": "article"
         },
         "metalsmith-tags": {
             "handle": "tags",
@@ -83,11 +71,6 @@
         },
         "metalsmith-clean-css": {
             "files": "template/**/*.css"
-        },
-        "metalsmith-excerptor": {
-            "maxLength": 100,
-            "keepImageTag": false,
-            "ellipsis": "…"
         },
         "metalsmith-collections": {
             "collections":{
