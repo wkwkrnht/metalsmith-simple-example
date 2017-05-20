@@ -11,14 +11,14 @@
                 "pattern": "posts/*",
                 "metadata": {
                     "title": {
-                        "exists": true,
+                        "exists": "true",
                         "type": "String"
                     },
                     "tag": {
                   	    "default": "uncategorized"
                     },
                     "draft": {
-                        "exists": false
+                        "exists": "false"
                     }
                 }
             }
@@ -34,7 +34,7 @@
             },
             "serieNameProperty": "nameoftheserie",
             "sortByProperty": "pubdate",
-            "reverse": true
+            "reverse": "true"
         },
         "metalsmith-author": {
             "collection": "posts",
@@ -47,19 +47,19 @@
             }
         },
         "metalsmith-gist": {
-            "debug": true,
+            "debug": "true",
             "cacheDir": ".gists"
         },
         "metalsmith-youtube": {
             "width:": "800",
             "height": "450",
-            "suggested": true,
-            "controls": true,
-            "showTitle": true,
-            "privacy" : true
+            "suggested": "true",
+            "controls": "true",
+            "showTitle": "true",
+            "privacy" : "true"
         },
         "metalsmith-twitter-card": {
-            "siteurl": "wkwkrnht-blog.netlify.com",
+            "siteurl": "https://wkwkrnht-blog.netlify.com",
             "card": "summary",
             "site": "@wkwkrnht",
         },
@@ -72,16 +72,16 @@
             "path": "tags/:tag.html",
             "layout": "/partials/tags.hbt",
             "sortBy": "date",
-            "reverse": true,
-            "skipMetadata": false,
+            "reverse": "true",
+            "skipMetadata": "false",
             "slug": {
                 "mode": "rfc3986"
             }
         },
         "metalsmith-lunr": {
             "fields": {
-                "tags": 10,
-                "contents": 1
+                "tags": "10",
+                "contents": "1"
             }
         },
         "metalsmith-robots": {
@@ -101,7 +101,7 @@
             "options": "-o7 -preserve"
         },
         "metalsmith-excerptor": {
-            "maxLength": 100,
+            "maxLength": "100",
             "keepImageTag": "false",
             "ellipsis": "…"
         },
