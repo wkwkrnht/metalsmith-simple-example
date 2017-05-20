@@ -1,7 +1,5 @@
 {
     "metadata": {
-        "generatorname": "Metalsmith",
-        "generatorurl": "http://metalsmith.io/",
         "title": "RT狂の思考ログ",
         "description": "Just my own blog.",
         "author": "wkwkrnht"
@@ -30,11 +28,8 @@
         },
         "metalsmith-collections": {
             "collections":{
-                "posts": "*.html"
+                "posts": "posts/*.html"
             }
-        },
-        "metalsmith-archive": {
-            "locale":"ja-JP"
         },
         "metalsmith-permalinks": {
             "pattern": "posts/:title"
@@ -47,6 +42,7 @@
         "metalsmith-templates": {
             "engine": "handlebars"
         },
+        "metalsmith-archive": {},
         "metalsmith-gist": {},
         "metalsmith-lunr": {},
         "metalsmith-inline-source": {},
