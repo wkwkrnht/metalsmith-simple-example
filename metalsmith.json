@@ -7,33 +7,6 @@
         "author": "wkwkrnht"
     },
     "plugins": {
-        "metalsmith-validate": [
-            {
-                "pattern": "posts/*",
-                "metadata": {
-                    "title": {
-                        "exists": true,
-                        "type": "String"
-                    },
-                    "tag": {
-                  	    "default": "uncategorized"
-                    },
-                    "draft": {
-                        "exists": false
-                    }
-                }
-            }
-        ],
-        "metalsmith-series": {
-            "series": {
-                "awesome-serie": {
-                    "title": "This is an awesome serie I made !"
-                }
-            },
-            "serieNameProperty": "nameoftheserie",
-            "sortByProperty": "pubdate",
-            "reverse": true
-        },
         "metalsmith-author": {
             "collection": "posts",
             "authors": {
@@ -48,23 +21,6 @@
             "siteurl": "https://wkwkrnht-blog.netlify.com",
             "card": "summary",
             "site": "@wkwkrnht",
-        },
-        "metalsmith-tags": {
-            "handle": "tags",
-            "path": "tags/:tag.html",
-            "layout": "template/partials/tags.hbt",
-            "sortBy": "date",
-            "reverse": true,
-            "skipMetadata": false,
-            "slug": {
-                "mode": "rfc3986"
-            }
-        },
-        "metalsmith-robots": {
-            "useragent": "googlebot",
-            "allow": ["index.html", "about.html"],
-            "disallow": ["404.html"],
-            "sitemap": "https://wkwkrnht-blog.netlify.com/sitemap.xml"
         },
         "metalsmith-sitemap": {
             "hostname": "https://wkwkrnht-blog.netlify.com"
