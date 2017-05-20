@@ -12,24 +12,18 @@
         "metalsmith-clean-css": "^5.0.1",
         "metalsmith-feed": "^0.2.0",
         "metalsmith-excerptor": "^0.0.1",
-        "metalsmith-gist": "^0.3.0",
         "metalsmith-inline-source": "^1.0.6",
         "metalsmith-lunr": "^0.2.1",
         "metalsmith-markdown": "^0.2.1",
-        "metalsmith-open-graph": "^0.0.4",
         "metalsmith-permalinks": "^0.4.0",
         "metalsmith-robots": "^1.0.1",
         "metalsmith-series": "^0.1.0",
         "metalsmith-sitemap": "^1.2.0",
         "metalsmith-tags": "^2.0.0",
         "metalsmith-templates": "^0.6.1",
-        "metalsmith-twitter-card": "^1.0.4",
-        "metalsmith-validate": "^0.1.4",
-        "metalsmith-youtube": "^1.0.2"
+        "metalsmith-validate": "^0.1.4"
     },
     "dependencies": {
-        "metalsmith-autoprefixer": "^1.1.1",
-        "metalsmith-optipng": "0.0.2",
-        "metalsmith-picset-handlebars-helper": "0.0.2"
+        "metalsmith-autoprefixer": "^1.1.1"
     }
 }
