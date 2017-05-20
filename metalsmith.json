@@ -3,7 +3,8 @@
         "generatorname": "Metalsmith",
         "generatorurl": "http://metalsmith.io/",
         "title": "RT狂の思考ログ",
-        "description": "Just my own blog."
+        "description": "Just my own blog.",
+        "author": "wkwkrnht"
     },
     "plugins": {
         "metalsmith-validate": [
@@ -27,9 +28,6 @@
             "series": {
                 "awesome-serie": {
                     "title": "This is an awesome serie I made !"
-                },
-                "another-hit": {
-                    "title": "Another great serie !"
                 }
             },
             "serieNameProperty": "nameoftheserie",
@@ -45,10 +43,6 @@
                     "twitter": "@wkwkrnht"
                 }
             }
-        },
-        "metalsmith-gist": {
-            "debug": true,
-            "cacheDir": ".gists"
         },
         "metalsmith-youtube": {
             "width:": "800",
@@ -70,18 +64,12 @@
         "metalsmith-tags": {
             "handle": "tags",
             "path": "tags/:tag.html",
-            "layout": "/partials/tags.hbt",
+            "layout": "template/partials/tags.hbt",
             "sortBy": "date",
             "reverse": true,
             "skipMetadata": false,
             "slug": {
                 "mode": "rfc3986"
-            }
-        },
-        "metalsmith-lunr": {
-            "fields": {
-                "tags": 10,
-                "contents": 1
             }
         },
         "metalsmith-robots": {
@@ -106,9 +94,6 @@
                 "posts": "*.html"
             }
         },
-        "metalsmith-inline-source": {
-            "ignore": ["jpg", "png", "jpeg", "gif"]
-        },
         "metalsmith-archive": {
             "locale":"ja-JP"
         },
@@ -123,6 +108,9 @@
         "metalsmith-templates": {
             "engine": "handlebars"
         },
+        "metalsmith-gist": {},
+        "metalsmith-lunr": {},
+        "metalsmith-inline-source": {},
         "metalsmith-markdown": {},
         "metalsmith-autoprefixer": {}
     }
