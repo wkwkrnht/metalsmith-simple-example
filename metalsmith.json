@@ -3,9 +3,7 @@
         "generatorname": "Metalsmith",
         "generatorurl": "http://metalsmith.io/",
         "title": "RT狂の思考ログ",
-        "description": "Just my own blog.",
-        "repositry": "https:/github.com/wkwkrnht/metalsmith-simple-example",
-        "license": "MIT"
+        "description": "Just my own blog."
     },
     "plugins": {
         "metalsmith-validate": [

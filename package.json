@@ -1,6 +1,8 @@
 {
     "private": false,
     "name": "metalsmith-wkwkrnht",
+    "repositry": "https:/github.com/wkwkrnht/metalsmith-simple-example",
+    "license": "MIT",
     "devDependencies": {
         "handlebars": "^3.0.0",
         "metalsmith": "^1.3.0",
