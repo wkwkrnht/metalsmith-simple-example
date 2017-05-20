@@ -6,14 +6,18 @@
     </head>
     <body>
         <header>
+            <a id="menu-toggle"></a>
             <h1>{{ title }}</h1>
         </header>
-        <ul>
+        <main>
             {{#each collections.posts}}
-                <li>
-                    <a href="{{this.path}}">{{this.title}}</a>
-                </li>
+                <a href="{{this.path}}" title="{{this.title}}" class="card">
+                    <img src="{{this.eyecatch}}" alt="eyecatch" class="card-img">
+                    <div class="card-meta">
+                        <h2>{{this.title}}</h2>
+                    </div>
+                </a>
             {{/each}}
-        </ul>
+        </main>
     </body>
 </html>

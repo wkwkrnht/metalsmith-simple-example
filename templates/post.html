@@ -4,8 +4,12 @@
         <link rel="stylesheet" src="/initial.css">
     </head>
     <body>
-        <h1>{{ title }}</h1>
-        <time>{{ date }}</time>
-        {{{ contents }}}
+        <header>
+            <h1>{{ title }}</h1>
+            <time>{{ date }}</time>
+        </header>
+        <div role="main">
+            {{{ contents }}}
+        </div>
     </body>
 </html>

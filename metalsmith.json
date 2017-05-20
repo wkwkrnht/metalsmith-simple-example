@@ -5,28 +5,17 @@
         "author": "wkwkrnht"
     },
     "plugins": {
-        "metalsmith-sitemap": {
-            "hostname": "https://wkwkrnht-blog.netlify.com"
-        },
+        "metalsmith-autoprefixer": {},
         "metalsmith-clean-css": {
             "files": "template/**/*.css"
         },
+        "metalsmith-inline-source": {},
         "metalsmith-permalinks": {
             "pattern": "posts/:title"
         },
         "metalsmith-collections": {
             "posts": {
                 "pattern":"posts/*.md"
-            }
-        },
-        "metalsmith-author": {
-            "collection": "posts",
-            "authors": {
-                "wkwkrnht": {
-                    "name": "wkwkrnht",
-                    "url": "http://wkwkrnht.wp.xdomain.jp",
-                    "twitter": "@wkwkrnht"
-                }
             }
         },
         "metalsmith-templates": {
@@ -54,6 +43,16 @@
                 }
             }
         ],
+        "metalsmith-author": {
+            "collection": "posts",
+            "authors": {
+                "wkwkrnht": {
+                    "name": "wkwkrnht",
+                    "url": "http://wkwkrnht.wp.xdomain.jp",
+                    "twitter": "@wkwkrnht"
+                }
+            }
+        },
         "metalsmith-series": {
             "series": {
                 "awesome-serie": {
@@ -81,10 +80,11 @@
             "disallow": ["404.html"],
             "sitemap": "https://wkwkrnht-blog.netlify.com/sitemap.xml"
         },
+        "metalsmith-sitemap": {
+            "hostname": "https://wkwkrnht-blog.netlify.com"
+        },
         "metalsmith-archive": {},
         "metalsmith-lunr": {},
-        "metalsmith-inline-source": {},
-        "metalsmith-markdown": {},
-        "metalsmith-autoprefixer": {}
+        "metalsmith-markdown": {}
     }
 }
