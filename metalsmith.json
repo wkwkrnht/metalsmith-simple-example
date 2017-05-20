@@ -1,20 +1,135 @@
 {
-  "metadata": {
-    "title": "My Blog",
-    "description": "My second, super-cool blog."
-  },
-  "plugins": {
-    "metalsmith-collections": {
-      "posts": {
-        "pattern":"posts/*.md"
-      }
+    "metadata": {
+        "generatorname": "Metalsmith",
+        "generatorurl": "http://metalsmith.io/",
+        "title": "RT狂の思考ログ",
+        "description": "Just my own blog.",
+        "repositry": "https:/github.com/wkwkrnht/metalsmith-simple-example",
+        "license": "MIT"
     },
-    "metalsmith-markdown": {},
-    "metalsmith-permalinks": {
-      "pattern": "posts/:title"
-    },
-    "metalsmith-templates": {
-      "engine": "handlebars"
+    "plugins": {
+        "metalsmith-validate": [
+            {
+                "pattern": "posts/*",
+                "metadata": {
+                    "title": {
+                        "exists": true,
+                        "type": "String"
+                    },
+                    "tag": {
+                  	    "default": "uncategorized"
+                    },
+                    "draft": {
+                        "exists": "false"
+                    }
+                }
+            }
+        ],
+        "metalsmith-series": {
+            "series": {
+                "awesome-serie": {
+                    "title": "This is an awesome serie I made !"
+                },
+                "another-hit": {
+                    "title": "Another great serie !"
+                }
+            },
+            "serieNameProperty": "nameoftheserie",
+            "sortByProperty": "pubdate",
+            "reverse": "true"
+        },
+        "metalsmith-author": {
+            "collection": "posts",
+            "authors": {
+                "wkwkrnht": {
+                    "name": "wkwkrnht",
+                    "url": "http://wkwkrnht.wp.xdomain.jp",
+                    "twitter": "@wkwkrnht"
+                }
+            }
+        },
+        "metalsmith-gist": {
+            "debug": true,
+            "cacheDir": ".gists"
+        },
+        "metalsmith-youtube": {
+            "width:": "800",
+            "height": "450",
+            "suggested": "true",
+            "controls": "true",
+            "showTitle": "true",
+            "privacy" : "true"
+        },
+        "metalsmith-twitter-card": {
+            "siteurl": "wkwkrnht-blog.netlify.com",
+            "card": "summary",
+            "site": "@wkwkrnht",
+        },
+        "metalsmith-open-graph": {
+            "siteurl": "https://wkwkrnht-blog.netlify.com",
+            "sitetype": "article"
+        },
+        "metalsmith-tags": {
+            "handle": "tags",
+            "path": "tags/:tag.html",
+            "layout": "/partials/tags.hbt",
+            "sortBy": "date",
+            "reverse": true,
+            "skipMetadata": false,
+            "slug": {
+                "mode": "rfc3986"
+            }
+        },
+        "metalsmith-lunr": {
+            "fields": {
+                "tags": 10,
+                "contents": 1
+            }
+        },
+        "metalsmith-robots": {
+            "useragent": "googlebot",
+            "allow": ["index.html", "about.html"],
+            "disallow": ["404.html"],
+            "sitemap": "https://wkwkrnht-blog.netlify.com/sitemap.xml"
+        },
+        "metalsmith-sitemap": {
+            "hostname": "https://wkwkrnht-blog.netlify.com"
+        },
+        "metalsmith-clean-css": {
+            "files": "template/**/*.css"
+        },
+        "metalsmith-archive": {
+            "pattern": "**/*.png",
+            "options": "-o7 -preserve"
+        },
+        "metalsmith-excerptor": {
+            "maxLength": 100,
+            "keepImageTag": "false",
+            "ellipsis": "…"
+        },
+        "metalsmith-collections": {
+            "collections":{
+                "posts": "*.html"
+            }
+        },
+        "metalsmith-inline-source": {
+            "ignore": ["jpg", "png", "jpeg", "gif"]
+        },
+        "metalsmith-archive": {
+            "locale":"ja-JP"
+        },
+        "metalsmith-permalinks": {
+            "pattern": "posts/:title"
+        },
+        "metalsmith-collections": {
+            "posts": {
+                "pattern":"posts/*.md"
+            }
+        },
+        "metalsmith-templates": {
+            "engine": "handlebars"
+        },
+        "metalsmith-markdown": {},
+        "metalsmith-autoprefixer": {}
     }
-  }
 }
