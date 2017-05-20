@@ -51,12 +51,12 @@
             "cacheDir": ".gists"
         },
         "metalsmith-youtube": {
-            "width:": 800,
-            "height": 450,
-            "suggested": true,
-            "controls": true,
-            "showTitle": true,
-            "privacy" : true
+            "width:": "800",
+            "height": "450",
+            "suggested": "true",
+            "controls": "true",
+            "showTitle": "true",
+            "privacy" : "true"
         },
         "metalsmith-twitter-card": {
             "siteurl": "https://wkwkrnht-blog.netlify.com",
@@ -95,10 +95,6 @@
         },
         "metalsmith-clean-css": {
             "files": "template/**/*.css"
-        },
-        "metalsmith-archive": {
-            "pattern": "**/*.png",
-            "options": ["-o7", "-preserve"]
         },
         "metalsmith-excerptor": {
             "maxLength": 100,
