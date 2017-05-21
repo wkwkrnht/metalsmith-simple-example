@@ -18,21 +18,6 @@ var archive = require('metalsmith-archive')
 var lunr = require('metalsmith-lunr')
 
 metalsmith(__dirname)
-    .metadata(
-        {
-            "siteurl": "https://wkwkrnht-blog.netlify.com",
-            "title": "RT狂の思考ログ",
-            "description": "Just my own blog.",
-            "author": "wkwkrnht",
-            "fb-appid": "",
-            "google-auth": "",
-            "google-analytics-id": "",
-            "bing-auth": "",
-            "favicon": "",
-            "theme-color": "#03a9f4",
-            "icon-img": ""
-        }
-    )
     .use(collections({
         posts:{
             pattern: "posts/*.md"
