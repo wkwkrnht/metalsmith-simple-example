@@ -18,8 +18,7 @@
             }
         },
         "metalsmith-templates": {
-            "engine": "handlebars",
-            "partials": "templates/partials"
+            "engine": "handlebars"
         },
         "metalsmith-markdown": {},
         "metalsmith-permalinks": {
@@ -50,7 +49,7 @@
                         "type": "String"
                     },
                     "tag": {
-                        "default": "uncategorized"
+                        "default": "uncategolized"
                     },
                     "draft": {
                         "exists": false
@@ -81,7 +80,7 @@
         "metalsmith-tags": {
             "handle": "tags",
             "path": "tags/:tag.html",
-            "layout": "template/partials/tags.hbt",
+            "layout": "template/partials/tags.html",
             "sortBy": "date",
             "reverse": true,
             "skipMetadata": false,
