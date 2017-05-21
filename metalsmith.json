@@ -19,7 +19,7 @@
             }
         },
         "metalsmith-in-place": {
-            "engine": "jstransformer"
+            "engine": "handlebars"
         },
         "metalsmith-markdown": {},
         "metalsmith-permalinks": {
