@@ -1,7 +1,7 @@
 var metalsmith = require('metalsmith')
 var collections = require('metalsmith-collections')
 var inPlace = require('metalsmith-in-place')
-var handlebars = require('metalsmith-engine-handlebars')
+var Consolidate = require('metalsmith-engine-handlebars')
 var markdown = require('metalsmith-markdown')
 var permalinks = require('metalsmith-permalinks')
 var autoprefixer = require('metalsmith-autoprefixer')
@@ -24,7 +24,7 @@ metalsmith(__dirname)
         }
     }))
     .use(inPlace({
-        engine: handlebars
+        engine: "handlebars"
     }))
     .use(markdown({}))
     .use(permalinks({
