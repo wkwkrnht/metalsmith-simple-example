@@ -1,17 +1,26 @@
 <html>
     <head>
         <title>{{ title }}</title>
+        <meta charset="UTF-8">
         <meta name="description" content="{{ description }}">
-        <link rel="stylesheet" src="initial.css">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <meta name="renderer" content="webkit">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="description" content="{{ description }}">
+        <meta name="theme-color" content="{{ theme-color }}">
+        <meta name="msapplication-TileColor" content="{{ theme-color }}">
+        <link rel="image_src" href="" url="" height="256" width="256">
+        <link rel="fluid-icon" href="" title="{{ title }}">
+        <link rel="stylesheet" src="./css/initial.css">
+        <link rel="stylesheet" src="./css/list.css">
     </head>
     <body>
         <header>
-            <a id="menu-toggle"></a>
             <h1>{{ title }}</h1>
         </header>
-        <main>
+        <main class="card-list">
             {{#each collections.posts}}
-                <a href="{{ this.path }}" title="{{this.title}}" class="card">
+                <a href="./posts/{{this.title}}" title="{{this.title}}" class="card">
                     <img src="{{this.eyecatch}}" alt="eyecatch" class="card-img">
                     <div class="card-meta">
                         <h2>{{this.title}}</h2>

@@ -2,17 +2,16 @@
     "metadata": {
         "title": "RT狂の思考ログ",
         "description": "Just my own blog.",
-        "author": "wkwkrnht"
+        "author": "wkwkrnht",
+        "fb-appid": "",
+        "google-auth": "",
+        "google-analytics-id": "",
+        "bing-auth": "",
+        "favicon": "",
+        "theme-color": "#03a9f4",
+        "icon-img": ""
     },
     "plugins": {
-        "metalsmith-autoprefixer": {},
-        "metalsmith-clean-css": {
-            "files": "template/**/*.css"
-        },
-        "metalsmith-inline-source": {},
-        "metalsmith-permalinks": {
-            "pattern": "posts/:title"
-        },
         "metalsmith-collections": {
             "posts": {
                 "pattern":"posts/*.md"
@@ -20,6 +19,17 @@
         },
         "metalsmith-templates": {
             "engine": "handlebars"
+        },
+        "metalsmith-markdown": {},
+        "metalsmith-permalinks": {
+            "pattern": "posts/:title"
+        },
+        "metalsmith-autoprefixer": {},
+        "metalsmith-clean-css": {
+            "files": "template/**/*.css"
+        },
+        "metalsmith-inline-source": {
+            "ignore": ["jpg", "jpeg", "png", "gif"]
         },
         "metalsmith-excerptor": {
             "maxLength": 100,
@@ -76,7 +86,7 @@
         },
         "metalsmith-robots": {
             "useragent": "googlebot",
-            "allow": ["index.html", "about.html"],
+            "allow": ["index.html", "posts/*", "tags/*"],
             "disallow": ["404.html"],
             "sitemap": "https://wkwkrnht-blog.netlify.com/sitemap.xml"
         },
@@ -84,7 +94,6 @@
             "hostname": "https://wkwkrnht-blog.netlify.com"
         },
         "metalsmith-archive": {},
-        "metalsmith-lunr": {},
-        "metalsmith-markdown": {}
+        "metalsmith-lunr": {}
     }
 }
