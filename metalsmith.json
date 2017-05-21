@@ -18,11 +18,17 @@
             }
         },
         "metalsmith-templates": {
-            "engine": "handlebars"
+            "engine": "handlebars",
+            "directory": "templates",
+            "partials": "templates/partials"
         },
         "metalsmith-markdown": {},
         "metalsmith-permalinks": {
             "pattern": "posts/:title"
+        },
+        "metalsmith-permalinks": {
+            "pattern": "posts/:title",
+            "relative": "on"
         },
         "metalsmith-autoprefixer": {},
         "metalsmith-clean-css": {
