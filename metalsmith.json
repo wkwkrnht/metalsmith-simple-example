@@ -18,15 +18,10 @@
                 "pattern":"posts/*.md"
             }
         },
-        "metalsmith-in-place": {
-            "engineOptions": {
-                "SafeString": "path"
-            }
+        "metalsmith-layouts": {
+            "engine": "handlebars"
         },
         "metalsmith-markdown": {},
-        "metalsmith-permalinks": {
-            "pattern": "posts/:title"
-        },
         "metalsmith-permalinks": {
             "pattern": "posts/:title",
             "relative": true
