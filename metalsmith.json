@@ -28,7 +28,7 @@
         },
         "metalsmith-permalinks": {
             "pattern": "posts/:title",
-            "relative": "on"
+            "relative": true
         },
         "metalsmith-autoprefixer": {},
         "metalsmith-clean-css": {
