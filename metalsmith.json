@@ -19,7 +19,6 @@
             }
         },
         "metalsmith-in-place": {
-            "engine": "handlebars",
             "engineOptions": {
                 "SafeString": "path"
             }
