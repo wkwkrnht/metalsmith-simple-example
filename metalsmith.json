@@ -11,5 +11,7 @@
         "favicon": "",
         "theme-color": "#03a9f4",
         "icon-img": ""
-    }
+    },
+    "source": "./src",
+    "destination": "./build"
 }
