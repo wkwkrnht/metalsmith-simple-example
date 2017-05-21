@@ -18,7 +18,7 @@
                 "pattern":"posts/*.md"
             }
         },
-        "metalsmith-template": {
+        "metalsmith-templates": {
             "engine": "handlebars"
         },
         "metalsmith-markdown": {},

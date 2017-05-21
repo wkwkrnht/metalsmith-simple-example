@@ -19,7 +19,7 @@
         "metalsmith-series": "^0.1.0",
         "metalsmith-sitemap": "^1.2.0",
         "metalsmith-tags": "^2.0.0",
-        "metalsmith-template": "^0.7.0",
+        "metalsmith-templates": "^0.7.0",
         "metalsmith-validate": "^0.1.4",
         "metalsmith-wordcloud": "^0.0.3"
     },
