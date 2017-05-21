@@ -18,7 +18,9 @@
                 "pattern":"posts/*.md"
             }
         },
-        "metalsmith-in-place": {},
+        "metalsmith-in-place": {
+            "engine": "jstransformer"
+        },
         "metalsmith-markdown": {},
         "metalsmith-permalinks": {
             "pattern": "posts/:title",
