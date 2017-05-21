@@ -16,10 +16,10 @@
     <body>
         <header>
             <h1>{{ title }}</h1>
-            <time>{{ date }}</time>
+            <time>{{ date | date('Y/m/d G:i.s') }}</time>
         </header>
         <div role="main">
-            {{{ contents }}}
+            {{{ contents | safe }}}
         </div>
     </body>
 </html>
