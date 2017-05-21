@@ -81,9 +81,9 @@
                 "mode": "rfc3986"
             }
         },
-        "metalsmith-cloud": {
+        "metalsmith-wordcloud": {
             "handle": "tags",
-            "path": "tags",
+            "path": "topics",
             "reverse": true
         },
         "metalsmith-robots": {
