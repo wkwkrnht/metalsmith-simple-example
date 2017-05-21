@@ -1,5 +1,6 @@
 {
     "metadata": {
+        "siteurl": "https://wkwkrnht-blog.netlify.com",
         "title": "RT狂の思考ログ",
         "description": "Just my own blog.",
         "author": "wkwkrnht",
@@ -22,10 +23,10 @@
         },
         "metalsmith-markdown": {},
         "metalsmith-permalinks": {
-            "pattern": "posts/:title.html"
+            "pattern": "posts/:title"
         },
         "metalsmith-permalinks": {
-            "pattern": "posts/:title.html",
+            "pattern": "posts/:title",
             "relative": true
         },
         "metalsmith-autoprefixer": {},
