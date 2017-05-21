@@ -2,7 +2,7 @@
     <head>
         <title>{{ title }}</title>
         <meta name="description" content="{{ description }}">
-        <link rel="stylesheet" src="/initial.css">
+        <link rel="stylesheet" src="initial.css">
     </head>
     <body>
         <header>
@@ -11,7 +11,7 @@
         </header>
         <main>
             {{#each collections.posts}}
-                <a href="{{this.path}}" title="{{this.title}}" class="card">
+                <a href="{{ this.path }}" title="{{this.title}}" class="card">
                     <img src="{{this.eyecatch}}" alt="eyecatch" class="card-img">
                     <div class="card-meta">
                         <h2>{{this.title}}</h2>
