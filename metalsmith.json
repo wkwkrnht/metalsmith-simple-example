@@ -19,7 +19,6 @@
         },
         "metalsmith-templates": {
             "engine": "handlebars",
-            "directory": "templates",
             "partials": "templates/partials"
         },
         "metalsmith-markdown": {},
