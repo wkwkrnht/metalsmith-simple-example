@@ -22,10 +22,10 @@
         },
         "metalsmith-markdown": {},
         "metalsmith-permalinks": {
-            "pattern": "posts/:title"
+            "pattern": "posts/:title.html"
         },
         "metalsmith-permalinks": {
-            "pattern": "posts/:title",
+            "pattern": "posts/:title.html",
             "relative": true
         },
         "metalsmith-autoprefixer": {},
