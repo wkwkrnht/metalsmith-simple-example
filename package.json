@@ -9,7 +9,6 @@
         "metalsmith-archive": "^0.1.1",
         "metalsmith-author": "^1.1.0",
         "metalsmith-collections": "^0.7.0",
-        "metalsmith-clean-css": "^5.0.1",
         "metalsmith-feed": "^0.2.0",
         "metalsmith-excerptor": "^0.0.1",
         "metalsmith-inline-source": "^1.0.6",

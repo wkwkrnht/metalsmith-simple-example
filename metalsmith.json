@@ -29,12 +29,7 @@
             "relative": true
         },
         "metalsmith-autoprefixer": {},
-        "metalsmith-clean-css": {
-            "files": "template/**/*.css"
-        },
-        "metalsmith-inline-source": {
-            "ignore": ["jpg", "jpeg", "png", "gif"]
-        },
+        "metalsmith-inline-source": {},
         "metalsmith-excerptor": {
             "maxLength": 100,
             "keepImageTag": false,

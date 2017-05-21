@@ -7,7 +7,7 @@
     justify-content:space-evenly;
 }
 
-.card,.article-card{
+.card{
     box-shadow:0 0 3vmin rgba(0,0,0,.2);
     display:block;
     height:29vmax;
