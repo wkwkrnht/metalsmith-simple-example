@@ -81,6 +81,11 @@
                 "mode": "rfc3986"
             }
         },
+        "metalsmith-cloud": {
+            "handle": "tags",
+            "path": "tags",
+            "reverse": true
+        },
         "metalsmith-robots": {
             "useragent": "googlebot",
             "allow": ["index.html", "posts/*", "tags/*"],

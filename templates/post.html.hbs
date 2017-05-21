@@ -22,7 +22,14 @@
             <div class="article-main" role="main">
                 {{{ contents }}}
             </div>
-            <footer></footer>
+            <footer>
+                <h2>tag cloud</h2>
+                {{#each cloud}}
+                    <a href="{{this.pth}}">
+                        {{this.ctg}}({{this.wght}})
+                    </a>
+                {{/each}}
+            </footer>
         </article>
     </body>
 </html>
