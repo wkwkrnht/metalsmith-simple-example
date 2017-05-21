@@ -29,12 +29,7 @@
             {{/each}}
         </main>
         <script>
-            (function(){
-                var target = document.querySelectorAll('a.card');
-                for (i = 0, i < target.length, i++;) {
-                    target[i].href = target[i].str.replace(/&nbsp;/,'-');
-                }
-            })();
+            (function(){document.getElementsByClasses(".card").addEventListener("click", function(){this.href = this.href.replace(/%20/,"-");});})();
         </script>
     </body>
 </html>
