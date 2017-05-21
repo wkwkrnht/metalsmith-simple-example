@@ -1,4 +1,4 @@
-:root{
+body{
     color:#333;
     font:400 62.5%/1.9 -apple-system,"Lucida Grande","Helvetica Neue","Hiragino Kaku Gothic ProN","游ゴシック","メイリオ",'Meiryo',sans-serif;
     font-feature-settings:"pkna" on;
@@ -6,15 +6,6 @@
     -moz-osx-font-smoothing:grayscale;
     -ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%;
-}
-body{
-    margin:0;
-    padding-bottom:20vh;
-    scroll-behavior:smooth;
-    width:100%;
-}
-body > *{
-    max-width:100%;
 }
 template,[hidden],.none{
     display:none;
