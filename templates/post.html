@@ -12,13 +12,73 @@
         <link rel="fluid-icon" href="{{ eyecatch }}" title="{{ title }}">
         <link rel="stylesheet" href="{{ siteurl }}/css/initial.css">
         <link rel="stylesheet" href="{{ siteurl }}/css/post.css">
+        <script type="application/ld+json">
+            {
+                {
+                    "@context": "http://schema.org",
+                    "@type": "NewsArticle",
+                    "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": "https://google.com/article"
+                    },
+                    "headline": "{{ title }}",
+                    "image": {
+                        "@type": "ImageObject",
+                        "url": "{{ eyecatch }}",
+                        "height": 256,
+                        "width": 696
+                    },
+                    "datePublished": "' . get_the_time('Y/n/j G:i.s') . '",
+                    "dateModified": "' . get_mtime('Y/n/j G:i.s') . '",
+                    "author": {
+                        "@type": "Person",
+                        "name": "{{ author.name }}"
+                    },
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "{{ sitetitle }}",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "url": "{{ author.icon }}",
+                            "width": 600,
+                            "height": 60
+                        }
+                    },
+                    "description": "{{ description }}"
+                },
+                {
+                    "@context":"http://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement":
+                    [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item":{
+                                "@id": "{{ siteurl }}",
+                                "name": "{{ sitetitle }}"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": "2",
+                            "item":{
+                                "@id": "{{ siteurl }}/posts/{{ title }}",
+                                "name": "{{ title }}"
+                            }
+                        }
+                }
+            }
+        </script>
     </head>
     <body>
         <article>
-            <header class="article-meta">
+            <header class="article-header">
                 <img src="{{ eyecatch }}" alt="eyecatch" class="article-eyecatch">
-                <h1 class="article-title">{{ title }}</h1>
-                <time class="article-date">{{ date }}</time>
+                <div class="article-meta">
+                    <h1 class="article-title">{{ title }}</h1>
+                    <time class="article-date">{{ date }}</time>
+                </div>
             </header>
             <div class="article-main" role="main">
                 {{{ contents }}}
