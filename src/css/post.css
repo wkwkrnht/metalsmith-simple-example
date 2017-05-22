@@ -48,7 +48,7 @@ article{
 .article-date,.article-author{
     width:49%;
 }
-.article-footer .copyright,.amp-copyright{
+.article-footer .copyright{
     background-color:#03a9f4;
     color:#fff;
     display:block;
