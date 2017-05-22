@@ -1,0 +1,26 @@
+---
+title: SONYにもGoogleによる魔の手が……
+author: wkwkrnht
+type: post
+date: 2016-10-01T10:52:46+00:00
+url: /google-play-music/527/
+snapWP:
+  - 's:323:"a:1:{i:0;a:10:{s:11:"isPrePosted";s:1:"1";s:8:"isPosted";s:1:"1";s:4:"pgID";s:3:"617";s:5:"pDate";s:19:"2016-11-03 09:55:03";s:2:"do";s:1:"1";s:11:"SNAPformatT";s:15:"%TITLE% %HTAGS%";s:10:"SNAPformat";s:46:"<a class="embedly-card" href="%URL%">%URL%</a>";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:4:"doWP";s:1:"1";}}";'
+  - 's:323:"a:1:{i:0;a:10:{s:11:"isPrePosted";s:1:"1";s:8:"isPosted";s:1:"1";s:4:"pgID";s:3:"617";s:5:"pDate";s:19:"2016-11-03 09:55:03";s:2:"do";s:1:"1";s:11:"SNAPformatT";s:15:"%TITLE% %HTAGS%";s:10:"SNAPformat";s:46:"<a class="embedly-card" href="%URL%">%URL%</a>";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:4:"doWP";s:1:"1";}}";'
+snap_MYURL:
+  - 
+  - 
+snapEdIT:
+  - 1
+  - 1
+snapFB:
+  - 
+  - 
+snapTW:
+  - 
+  - 
+
+---
+私の元に一通のメールがやってきました。<img class="size-full wp-image-287" src="https://wkwkrnht.gegahost.net/2016/10/google_x_sony.png" alt="メールのスクリーンショット" width="720" height="1280" />これがそのメールです。書いてあるのは、なんとGoogle play musicの無料期間延長キャンペーン。どこかで、聞いた覚えがありますな。例えば、ソフトバンクとか。まああれは、久しぶりのAndroid本格展開の記念みたいな感じがありましたけどね。
+
+今回のは、XPERIA Z3のデベロッパープレビュー対応といい、BRAVIAでのAndroid TV採用といい、なんだかより親密感を醸し出そうとする政治的な意図が感じられます。その脇では、Daydreamの立ち上げに参加せずという部分もありますが。まあとにかくこのキャンペーン、SRS-BTX300を利用している私にさえ来たのでどんどん広まると思います。ただ、試用期間が切れてしまったアカウントや契約中のアカウントは対象外となっているので、そこだけ注意してください。
