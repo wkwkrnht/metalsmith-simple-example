@@ -13,39 +13,10 @@
         <link rel="fluid-icon" href="" title="{{ title }}">
         <link rel="stylesheet" href="/css/initial.css">
         <link rel="stylesheet" href="/css/list.css">
-        <script type="application/ld+json">
-            {
-                "@context": "http://schema.org",
-                "@type": "WebSite",
-                "name":"{{ sitetitle }}",
-                "description": "{{ description }}",
-                "url": "{{ siteurl }}",
-                "inLanguage": "{{ language }}",
-                "publisher":{
-    				"@type":"Organization",
-    				"name":"{{ author }}",
-    				"logo":{
-    					"@type": "ImageObject",
-    					"url": "{{ metaImage}}",
-    					"width":60,
-    					"height":60
-    				}
-    			},
-                "copyrightYear": "{{ startyear }}",
-                "copyrightHolder": {
-                    "@type": "Organization",
-                    "name": "{{ author }}"
-                },
-                "potentialAction": {
-                    "@type": "SearchAction",
-                    "target": "{{ siteurl }}?s={search_term}",
-                    "query-input": "required name=search_term"
-                }
-            }
-        </script>
+        <script type="application/ld+json" src="/json/list.json"></script>
     </head>
     <body>
-        <header class="article-header">
+        <header class="site-header">
             <h1 class="site-title">{{ sitetitle }}</h1>
             <span class="copyright">
                 <span itemprop="copyrightHolder" itemscope itemtype="http://schema.org/Organization">
