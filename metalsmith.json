@@ -96,9 +96,6 @@
         "metalsmith-sitemap": {
             "hostname": "https://wkwkrnht-blog.netlify.com"
         },
-        "metalsmith-feed": {
-            "collection": "posts"
-        },
         "metalsmith-archive": {},
         "metalsmith-lunr": {}
     }
