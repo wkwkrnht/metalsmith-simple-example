@@ -3,7 +3,7 @@
     "@type": "WebSite",
     "name":"{{ sitetitle }}",
     "description": "{{ description }}",
-    "url": "{{ siteurl }}",
+    "url": "{{ site_url }}",
     "inLanguage": "{{ language }}",
     "publisher":{
         "@type":"Organization",
@@ -22,7 +22,7 @@
     },
     "potentialAction": {
         "@type": "SearchAction",
-        "target": "{{ siteurl }}?s={search_term}",
+        "target": "{{ site_url }}?s={search_term}",
         "query-input": "required name=search_term"
     }
 }
